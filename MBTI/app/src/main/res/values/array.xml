@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mbti_array">
+        <item>INTJ</item>
+        <item>INTP</item>
+        <item>ENTJ</item>
+        <item>ENTP</item>
+        <item>INFJ</item>
+        <item>INFP</item>
+        <item>ENFJ</item>
+        <item>ENFP</item>
+        <item>ISTJ</item>
+        <item>ISTP</item>
+        <item>ESTJ</item>
+        <item>ESTP</item>
+        <item>ISFJ</item>
+        <item>ISFP</item>
+        <item>ESFJ</item>
+        <item>ESFP</item>
+    </string-array>
+    <string-array name="age_array">
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="email_array">
+        <item>knu.ac.kr</item>
+        <item>naver.com</item>
+        <item>gmail.com</item>
+        <item>daum.net</item>
+    </string-array>
+    <string-array name="univ_array">
+        <item>경북대학교(대구캠)</item>
+        <item>경북대학교(상주캠)</item>
+    </string-array>
+    <string-array name="dorm_array">
+        <item>성실관</item>
+        <item>긍지관</item>
+        <item>협동관</item>
+        <item>봉사관</item>
+        <item>진리관</item>
+        <item>화목관</item>
+        <item>면학관</item>
+        <item>향토관</item>
+        <item>첨성관</item>
+        <item>명의관</item>
+        <item>누리관</item>
+    </string-array>
+    <string-array name="PMAM_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="pstime_array">
+        <item>12</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="pmajor_array">
+        <item>컴퓨터학부</item>
+        <item>경영학부</item>
+        <item>영어영문학과</item>
+        <item>수학과</item>
+        <item>전자공학과</item>
+    </string-array>
+    <string-array name="pshour_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+</resources>

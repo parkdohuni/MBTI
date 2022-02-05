@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserRegister">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/signup_textview_style"
+        android:paddingLeft="164dp"
+        android:paddingTop="14dp"
+        android:text="회원 가입"
+        android:textColor="#4A4A4A"
+        android:textColorHighlight="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/noto_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 버튼 공간 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1600dp"
+            app:layout_constraintEnd_toEndOf="@+id/UserInfo_textView"
+            app:layout_constraintStart_toEndOf="@+id/UserInfo_textView">
+
+
+            <EditText
+                android:id="@+id/userPWCheck_editText"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/signup_edittext_style"
+                android:ems="10"
+                android:hint="한번 더 입력해 주세요."
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userPW_editText" />
+
+            <EditText
+                android:id="@+id/userName_editText"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="312dp"
+                android:layout_weight="1"
+                android:background="@drawable/signup_edittext_style"
+                android:ems="10"
+                android:hint="이름을 입력해 주세요."
+                android:inputType="textPersonName"
+                android:privateImeOptions="defaultInputmode=korean"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/id_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="60dp"
+                android:text="아이디"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/userID_editText"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="52dp"
+                android:layout_weight="1"
+                android:background="@drawable/signup_edittext_style"
+                android:ems="10"
+                android:hint="아이디를 입력해 주세요."
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/userPW_editText"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="156dp"
+                android:layout_weight="1"
+                android:background="@drawable/signup_edittext_style"
+                android:ems="10"
+                android:hint="비밀번호를 입력해 주세요."
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/password_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="164dp"
+                android:text="비밀번호"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/id_Constraint_textView"
+                android:layout_width="363dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="100dp"
+                android:text="※ 아이디는 알파벳 소문자, 숫자만 사용하여 3 ~ 15글자 사이로 만들어 주시기 바랍니다."
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="11sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/UserInfo_textView"
+                android:layout_width="187dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="기본 사용자 정보"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="18sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintBottom_toTopOf="@+id/id_textView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/school_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="학교"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gender_textView" />
+
+            <TextView
+                android:id="@+id/age_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:text="나이"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_textView" />
+
+            <Spinner
+                android:id="@+id/age_spinner"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/signup_spinner_style"
+                android:hint="나이를 선택하세요"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userName_editText" />
+
+            <TextView
+                android:id="@+id/gender_textView"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="성별"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age_textView" />
+
+            <RadioButton
+                android:id="@+id/gender_woman"
+                android:layout_width="143dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/signup_radiobutton_style"
+                android:buttonTint="#217ED4"
+                android:text="여자"
+                android:textColor="#217ED4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age_spinner" />
+
+            <RadioButton
+                android:id="@+id/gender_man"
+                android:layout_width="143dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/signup_radiobutton_style"
+                android:buttonTint="#217ED4"
+                android:text="남자"
+                android:textColor="#217ED4"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/gender_woman"
+                app:layout_constraintTop_toBottomOf="@+id/age_spinner" />
+
+            <Spinner
+                android:id="@+id/univ_spinner"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/signup_spinner_style"
+                android:hint="학교를 선택해 주세요."
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+
+            <TextView
+                android:id="@+id/pw_Constraint_textView"
+                android:layout_width="364dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:text="※ 비밀번호는 알파벳 소문자, 숫자, 특수기호를 사용하여 8~16자 사이로 만들어 주시기 바랍니다."
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="11sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userPWCheck_editText" />
+
+            <TextView
+                android:id="@+id/name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="324dp"
+                android:text="이름"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age_spinner">
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/isSmokerRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MBTI_spinner">
+
+
+            </RadioGroup>
+
+
+            <Spinner
+                android:id="@+id/major_spinner"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/signup_spinner_style"
+                android:hint="학교를 선택해 주세요."
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/univ_spinner" />
+
+            <TextView
+                android:id="@+id/major_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="36dp"
+                android:text="전공"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/school_textView" />
+
+            <TextView
+                android:id="@+id/email_textView"
+                android:layout_width="60dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="36dp"
+                android:text="이메일"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dorm_textView3" />
+
+            <TextView
+                android:id="@+id/lifestyle_textView"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="생활패턴 정보"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="18sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_textView" />
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/signup_edittext_style"
+                android:ems="10"
+                android:hint="입력하세요"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dorm_spinner" />
+
+            <Spinner
+                android:id="@+id/email_spinner"
+                android:layout_width="157dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_spinner_style"
+                android:hint="이메일 주소를 선택하세요"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/dorm_spinner" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="28dp"
+                android:text="@"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toEndOf="@+id/email_editText"
+                app:layout_constraintTop_toBottomOf="@+id/dorm_spinner" />
+
+            <Spinner
+                android:id="@+id/MBTI_spinner"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_spinner_style"
+                android:hint="MBTI를 선택하세요"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lifestyle_textView" />
+
+            <Spinner
+                android:id="@+id/psTime_spinner"
+                android:layout_width="95dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_edittext_style"
+
+                app:layout_constraintStart_toEndOf="@+id/PMAM_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/isSmokerRadioGroup" />
+
+            <Spinner
+                android:id="@+id/PMAM_spinner"
+                android:layout_width="80dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_edittext_style"
+                android:enabled="false"
+                android:hint="오전/오후"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/isSmokerRadioGroup" />
+
+            <Spinner
+                android:id="@+id/psHour_spinner"
+                android:layout_width="50dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_edittext_style"
+                android:text="총 수면시간"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/isSmokerRadioGroup" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="28dp"
+                android:text="시간"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toEndOf="@+id/psHour_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/isSmokerRadioGroup" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="28dp"
+                android:text="시"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toEndOf="@+id/psTime_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/isSmokerRadioGroup" />
+
+            <TextView
+                android:id="@+id/MBTI_textView"
+                android:layout_width="63dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:text="MBTI"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lifestyle_textView" />
+
+            <RadioButton
+                android:id="@+id/isSmoker"
+                android:layout_width="140dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_radiobutton_style"
+                android:buttonTint="#217ED4"
+                android:text="예"
+                android:textColor="#217ED4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MBTI_spinner" />
+
+            <RadioButton
+                android:id="@+id/isnotSmoker"
+                android:layout_width="140dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signup_radiobutton_style"
+                android:buttonTint="#217ED4"
+                android:text="아니오"
+                android:textColor="#217ED4"
+                app:layout_constraintStart_toEndOf="@+id/isSmoker"
+                app:layout_constraintTop_toBottomOf="@+id/MBTI_spinner" />
+
+            <TextView
+                android:id="@+id/isSmoker_textView"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="흡연여부"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/MBTI_textView" />
+
+            <TextView
+                android:id="@+id/sleepPattern_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="수면패턴"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/isSmoker_textView" />
+
+            <TextView
+                android:id="@+id/dorm_textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="38dp"
+                android:text="기숙사"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/major_textView" />
+
+            <Spinner
+                android:id="@+id/dorm_spinner"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/signup_spinner_style"
+                android:hint="학교를 선택해 주세요."
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/major_spinner" />
+
+            <EditText
+                android:id="@+id/pcomment"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/signup_edittext_style"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="룸메들에게 자신을 어필해보세요!"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:privateImeOptions="defaultInputmode=korean"
+                android:textSize="16sp"
+
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pComment_textView" />
+
+            <TextView
+                android:id="@+id/pComment_textView"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="40dp"
+
+                android:text="자기소개"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textSize="16sp"
+                app:fontFamily="@font/noto_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sleepPattern_textView" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_button_style"
+        android:text="완료"
+        android:textColor="#4A4A4A"
+        android:textColorHighlight="#4A4A4A"
+        android:textSize="18sp"
+        app:fontFamily="@font/noto_sans"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomNavigationActivity">
+
+    <!-- 홈화면이다. 굳이 넣을 필요가 있나 생각도 됐지만 이게 없고
+     매칭 화면만 있으면 밋밋할 것 같아 일단 넣어뒀다. -->
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:title="홈"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/whats_my_mbti"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="76dp"
+        android:text="나의 MBTI는?"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/user_mbti_imageview"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/mbti_before_selection" />
+
+    <Button
+        android:id="@+id/profile_edit_bottom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="400dp"
+        android:text="프로필 수정"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@drawable/border">
+    </Button>
+
+    <Button
+        android:id="@+id/request_bottom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="400dp"
+        android:text="요청보관함"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@drawable/border">
+    </Button>
+
+    <Button
+        android:id="@+id/response_bottom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="400dp"
+        android:text="받은 요청"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@drawable/border">
+    </Button>
+
+    <Button
+        android:id="@+id/deny_bottom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="400dp"
+        android:text="차단프로필"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@drawable/border">
+    </Button>
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="61dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_infj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_infp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_enfj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_enfp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_isfj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_istj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_estj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_esfj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_istp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_estp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_isfp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_esfp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_entj" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_intp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mbti_intj" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>

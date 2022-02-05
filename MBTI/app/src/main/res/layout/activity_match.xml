@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Match"
+    android:background="@color/primaryBackgroundColor">
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="707dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rectangle_1" />
+
+    <ImageView
+        android:id="@+id/initial_match_page_app_logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
+        app:srcCompat="@drawable/unimate_icon_black" />
+
+
+    <Button
+        android:id="@+id/go_see_match_result_button"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/initial_match_page_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/blue_block"
+        android:onClick="matchButtonClick"
+        android:text="매칭하기"
+        android:textColor="#FFF"
+        android:textStyle="normal"
+        android:textSize="13sp"
+        android:fontFamily="@font/noto_sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/go_see_saved_match_results"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/initial_match_page_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/whiteblue_block"
+        android:onClick="openSavedMatchResults"
+        android:text="이전 매칭 결과 불러오기"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="#286AA6"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+
+    <Button
+        android:id="@+id/go_search_profiles"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/initial_match_page_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="183dp"
+        android:background="@drawable/search_profile_btn"
+        android:onClick="openSearchProfile"
+         />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@drawable/gray_block"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>

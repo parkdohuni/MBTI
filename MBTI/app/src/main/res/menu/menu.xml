@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //홈 Navigation
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="홈"
+        />
+
+    //매칭 Navigation
+    <item
+        android:id="@+id/nav_match"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="매칭" />
+
+</menu>

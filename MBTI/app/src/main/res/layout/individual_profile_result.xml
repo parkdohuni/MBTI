@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/match_result_user_mbti_image"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/mbti_enfj" />
+
+    <TextView
+        android:id="@+id/match_result_username"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="54dp"
+        android:layout_toEndOf="@+id/match_result_user_mbti_image"
+        android:fontFamily="@font/noto_sans"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#3574AE"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_user_mbti"
+        android:layout_width="134dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="117dp"
+        android:layout_toEndOf="@+id/match_result_user_mbti_image"
+        android:fontFamily="@font/noto_sans"
+        android:text="ENFJ"
+        android:textAlignment="center"
+        android:textColor="#3574AE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_lifestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:text="라이프스타일 설명:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/match_result_user_selfIntroduction"
+        android:layout_width="347dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/user_lifestyle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="안녕하세요! 저는 대체로 집을 깔끔하게 쓰는 유형이며, 같이 살게 되면 일주일에 최소 한 번은 같이 청소를 하면 좋겠습니다." />
+
+    <TextView
+        android:id="@+id/match_result_sleep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_contact"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/sleep_time"
+        android:text="01:00"
+        android:textColor="#63A180"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_user_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_result"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/user_major"
+        android:text="컴퓨터학부"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/user_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="19dp"
+        android:text="학과:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_dormitory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_user_major"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/user_dormitory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_major"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="19dp"
+        android:text="기숙사:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_dormitory"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/user_contact"
+        android:autoLink="web"
+        android:text="https://open.kakao.com/o/sFRTbg5"
+        android:textColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/user_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_dormitory"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="18dp"
+        android:text="연락처:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_smoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_age"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="19dp"
+        android:text="흡연:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_user_smoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_user_age"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/user_smoke"
+        android:text="비흡연"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gender_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_user_mbti_image"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/gender"
+        android:text="남"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_user_mbti_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="45dp"
+        android:text="성별:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_user_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_user_mbti_image"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="43dp"
+        android:layout_toEndOf="@+id/user_age"
+        android:text="25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/user_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_user_mbti_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="45dp"
+        android:text="나이:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_sleep_time"
+
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/sleep_time"
+        android:text="수면시각"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/match_result_sleep_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_contact"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/match_result_sleep_time"
+        android:text="8시간"
+        android:textColor="#63A180"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/match_result_sleep_hour"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="수면시간"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sleep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_contact"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="19dp"
+        android:text="수면시간:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
